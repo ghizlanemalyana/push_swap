@@ -1,0 +1,12 @@
+Algo
+	1- Push from a to b		--> Done
+	2- Sort the rest		--> Done
+	3- Fix is_sorted()		--> Done
+	4- Push from b to a		--> Done
+Parse
+	1- Split the arguments
+	Invalid : "--90" "++21" "8-" "8+"  "[tab]42"
+		"89Ilyasse" "Ghizlane123456789"
+	Valid : "[sign][number][slat 3la nbi ]"
+pointer vs double pointer
+Push
