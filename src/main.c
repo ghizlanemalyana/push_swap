@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 19:22:20 by gmalyana          #+#    #+#             */
-/*   Updated: 2024/05/15 20:04:41 by gmalyana         ###   ########.fr       */
+/*   Updated: 2024/05/15 21:53:00 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ void	print_stack(t_list *stack, char c)
 	}
 	printf("\n");
 }
+
+
 
 int	main(int argc, char *argv[])
 {

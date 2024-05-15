@@ -27,6 +27,8 @@ int	indexing(t_list *list, t_list *node)
 	return (1);
 }
 
+
+
 t_list	*list_init(char *nums[])
 {
 	t_list	*ls;
