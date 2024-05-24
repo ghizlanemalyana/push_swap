@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 20:14:44 by gmalyana          #+#    #+#             */
-/*   Updated: 2024/05/15 21:49:20 by gmalyana         ###   ########.fr       */
+/*   Updated: 2024/05/24 22:21:25 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ static char	**ft_free(char **arr, size_t size)
 	i = 0;
 	while (i < size)
 		free(arr[i++]);
-	free (arr);
+	free(arr);
 	return (NULL);
 }
 

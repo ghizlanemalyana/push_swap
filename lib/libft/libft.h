@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:34:36 by gmalyana          #+#    #+#             */
-/*   Updated: 2024/05/02 22:05:48 by gmalyana         ###   ########.fr       */
+/*   Updated: 2024/05/16 00:56:11 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ t_list	*ft_lstnew(int num);
 int		ft_lstsize(t_list *lst);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstclear(t_list **lst);
 t_list	*ft_lstlast(t_list *lst);
 
 #endif

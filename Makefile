@@ -1,20 +1,9 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/04/08 14:21:29 by gmalyana          #+#    #+#              #
-#    Updated: 2024/05/14 21:22:52 by gmalyana         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
-SOURCES = $(shell find src -type f -name "*.c" | tr '\n' ' ')
+SOURCES = src/instructions/push.c src/instructions/reverse_rotate.c src/instructions/rotate.c src/instructions/swap.c \
+	src/main.c src/parse.c src/sort.c src/utils.c
 OBJS = $(SOURCES:.c=.o)
 LIB_DIR = lib/libft/
 LIBFT = $(LIB_DIR)libft.a
-CFLAGS = #-Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 NAME = push_swap
 
 all: $(NAME)
@@ -22,11 +11,11 @@ all: $(NAME)
 $(NAME): $(OBJS) $(LIBFT)
 	cc $(OBJS) $(LIBFT) -o $(NAME)
 
-%.o:%.c push_swap.h
-	cc $(CFLAGS) -c $<
+%.o:%.c include/push_swap.h
+	cc $(CFLAGS) -c $< -o $@
 
 $(LIBFT) :
-	@make -C $(LIB_DIR)
+	make -C $(LIB_DIR)
 
 clean:
 	make clean -C $(LIB_DIR)

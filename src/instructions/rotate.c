@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 15:07:57 by gmalyana          #+#    #+#             */
-/*   Updated: 2024/05/04 22:26:33 by gmalyana         ###   ########.fr       */
+/*   Updated: 2024/05/24 17:15:53 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,17 +32,17 @@ static int	rotate(t_list **stack)
 void	ra(t_list **stack)
 {
 	if (rotate(stack) == 1)
-		printf("ra\n");
+		write(1, "ra\n", 3);
 }
 
 void	rb(t_list **stack)
 {
 	if (rotate(stack) == 1)
-		printf("rb\n");
+		write(1, "rb\n", 3);
 }
 
 void	rr(t_list **stack_a, t_list **stack_b)
 {
 	if (rotate(stack_a) + rotate(stack_b))
-		printf("rr\n");
+		write(1, "rr\n", 3);
 }

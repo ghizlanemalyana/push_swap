@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 17:41:31 by gmalyana          #+#    #+#             */
-/*   Updated: 2024/05/04 23:05:29 by gmalyana         ###   ########.fr       */
+/*   Updated: 2024/05/24 17:16:43 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,17 +32,17 @@ static int	swap(t_list **stack)
 void	sa(t_list **stack)
 {
 	if (swap(stack) == 1)
-		printf("sa\n");
+		write(1, "sa\n", 3);
 }
 
 void	sb(t_list **stack)
 {
 	if (swap(stack) == 1)
-		printf("sb\n");
+		write(1, "sb\n", 3);
 }
 
 void	ss(t_list **stack_a, t_list **stack_b)
 {
 	if (swap(stack_a) + swap(stack_b))
-		printf("ss\n");
+		write(1, "ss\n", 3);
 }

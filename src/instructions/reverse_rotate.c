@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 17:28:02 by gmalyana          #+#    #+#             */
-/*   Updated: 2024/05/04 23:04:45 by gmalyana         ###   ########.fr       */
+/*   Updated: 2024/05/24 17:15:14 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,17 +34,17 @@ static int	reverse_rorate(t_list **stack)
 void	rra(t_list **stack)
 {
 	if (reverse_rorate(stack) == 1)
-		printf("rra\n");
+		write(1, "rra\n", 4);
 }
 
 void	rrb(t_list **stack)
 {
 	if (reverse_rorate(stack) == 1)
-		printf("rrb\n");
+		write(1, "rrb\n", 4);
 }
 
 void	rrr(t_list **stack_a, t_list **stack_b)
 {
 	if (reverse_rorate(stack_a) + reverse_rorate(stack_b))
-		printf("rrr\n");
+		write(1, "rrr\n", 4);
 }
