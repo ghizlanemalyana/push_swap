@@ -6,12 +6,11 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 19:22:20 by gmalyana          #+#    #+#             */
-/*   Updated: 2024/05/24 21:53:48 by gmalyana         ###   ########.fr       */
+/*   Updated: 2024/05/25 17:27:21 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
-#include <stdio.h>
 
 int	main(int argc, char **argv)
 {
