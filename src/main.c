@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 19:22:20 by gmalyana          #+#    #+#             */
-/*   Updated: 2024/05/25 17:27:21 by gmalyana         ###   ########.fr       */
+/*   Updated: 2024/05/25 22:08:05 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	main(int argc, char **argv)
 		return (0);
 	stack_a = list_init(argv + 1);
 	if (stack_a == NULL)
-		return (write(1, "Error\n", 6), 0);
+		return (write(2, "Error\n", 6), 0);
 	sort(&stack_a, &stack_b);
 	ft_lstclear(&stack_a);
 	return (0);
