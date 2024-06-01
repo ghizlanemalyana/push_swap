@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 21:54:35 by gmalyana          #+#    #+#             */
-/*   Updated: 2024/05/24 22:24:00 by gmalyana         ###   ########.fr       */
+/*   Updated: 2024/06/01 17:15:27 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ static int	is_number(char *number)
 	int		i;
 
 	i = 0;
+	while (*number == '0')
+		number++;
 	while (number[i] != '\0')
 	{
 		if (!ft_isdigit(number[i]) && number[i + 1] == '\0')
