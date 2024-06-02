@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/05 18:47:34 by gmalyana          #+#    #+#             */
-/*   Updated: 2024/05/24 22:15:55 by gmalyana         ###   ########.fr       */
+/*   Updated: 2024/06/02 19:54:54 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,15 +58,20 @@ static void	sort_a(t_list **stack_a, t_list **stack_b)
 
 	if (ft_lstsize(*stack_a) == 2)
 		sa(stack_a);
-	min = ft_lstsize(*stack_b);
+	min = ft_lstsize(*stack_b) + 1;
 	while (ft_lstsize(*stack_a) != 3)
 	{
 		if (is_sorted(*stack_a) == 1)
 			return ;
-		if ((*stack_a)->index == min + 1 || (*stack_a)->index == min + 2)
+		if ((*stack_a)->index == min)
+		{
 			pb(stack_a, stack_b);
-		else
+			min++;
+		}
+		else if (is_above_or_under(*stack_a, min) == 1)
 			ra(stack_a);
+		else
+			rra(stack_a);
 	}
 	sort_three(stack_a);
 }
