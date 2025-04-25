@@ -6,7 +6,7 @@
 /*   By: gmalyana <gmalyana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 19:22:20 by gmalyana          #+#    #+#             */
-/*   Updated: 2024/05/25 22:08:05 by gmalyana         ###   ########.fr       */
+/*   Updated: 2024/06/06 15:33:52 by gmalyana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	main(int argc, char **argv)
 	t_list	*stack_a;
 	t_list	*stack_b;
 
-	stack_a = NULL;
 	stack_b = NULL;
 	if (argc == 1)
 		return (0);
